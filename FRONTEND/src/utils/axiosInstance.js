@@ -1,10 +1,9 @@
 import axios from "axios"
 
 const axiosInstance = axios.create({
-    baseURL:"http://localhost:3000",
-    timeout:10000, //10s
-    withCredentials:true
-})
+    baseURL: import.meta.env.VITE_API_URL,
+    withCredentials: true
+});
 
 // Response interceptor
 axiosInstance.interceptors.response.use(
