@@ -13,7 +13,7 @@ export const createShortUrlWithoutUser = async (url) => {
     if (!shortUrl) throw new Error("Short URL not generated")
 
     const normalizedUrl = normalizeUrl(url)
-console.log("NORMALIZED URL:", normalizedUrl)
+
 await saveShortUrl(shortUrl, normalizedUrl)
 
     return shortUrl
