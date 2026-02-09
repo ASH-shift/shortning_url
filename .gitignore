@@ -1,4 +1,6 @@
 BACKEND/node_modules
 
 .env
+BACKEND/.env
+
 
